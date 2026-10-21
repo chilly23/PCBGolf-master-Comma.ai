@@ -1,0 +1,16 @@
+EASYEDA PRO EDITABLE HANDOFF
+
+Open EasyEDA Pro, then File > Import > EasyEDA Professional.
+Select Compact_4Layer_Editable.epro.
+Open the existing PCB in the project tree to continue routing.
+The five schematic pages and project component libraries are included.
+BOM-and-placement.csv lists all 258 references, values, MPNs, sides and placement coordinates.
+
+This is the converted 38 x 38 mm, 4-layer layout with existing partial routing.
+Source status: 46 vias, 1327 track segments, 239 unconnected connections.
+DNP: C6, C10, J4. No completed fabrication/contest-ready design is claimed.
+EasyEDA GUI opening and DRC are not verified. Rebuild copper pours and check DRC after import.
+3D models are not included in this native project.
+
+Official import instructions:
+https://prodocs.easyeda.com/en/import-export/import-easyeda-pro/
