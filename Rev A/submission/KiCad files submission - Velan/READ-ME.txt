@@ -1,0 +1,14 @@
+FULL PROJECT CONVERSION NEEDS ONE MANUAL IMPORT
+
+1. Open the main KiCad project manager window.
+2. File > Import Non-KiCad Project > EasyEDA (JLCEDA) Pro Project.
+3. Choose IMPORT-THIS-IN-KICAD.epro from this folder.
+4. Choose a NEW empty output folder. Save the imported schematic and PCB.
+5. The supplied Submission.kicad_pcb has verified pad-net assignments. If the GUI-imported PCB has missing pad nets, use this PCB instead (rename its copy to match the imported project basename).
+6. Copy model.step into the output folder. Check schematic/PCB consistency, ERC/DRC and the assembly before zipping for submission.
+
+The PCB is converted: 243 components, 318 vias, 4095 track segments/arcs, 4 layers. All 1028 pad net assignments were checked against the original .epro2.
+The compatible .epro includes your schematic, PCB and libraries.
+KiCad GUI import remains necessary for the native schematic/project: desktop control could not connect, and the installed CLI cannot import schematics.
+This handoff ZIP is NOT the finalized competition submission.
+Original files have not been overwritten.
