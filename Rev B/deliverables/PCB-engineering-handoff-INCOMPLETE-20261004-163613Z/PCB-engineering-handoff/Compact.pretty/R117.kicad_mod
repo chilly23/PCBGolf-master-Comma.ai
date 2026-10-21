@@ -1,0 +1,161 @@
+(footprint "R117"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)")
+	(tags "resistor")
+	(property "Reference" "R117"
+		(at 0 -1.17 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6e9c43b8-60eb-4779-8346-678bdbe3fe33")
+		(effects
+			(font
+				(size 0.55 0.55)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "100"
+		(at 0 1.17 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "093157f8-34ac-453f-b10a-f23235e0a9f7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1bca9498-8075-415a-a6ff-f03a46f9ff90")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd5391fb-f8ff-4b68-8a49-c4319cb35bef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "96b97434-548b-4445-aefc-0af9d3b8f095")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "RC0402JR-07100RL"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "baaf6ea3-a3aa-4a8f-8025-55ac61706d6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify mirror)
+		)
+	)
+	(sheetname "ports")
+	(sheetfile "ports.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -0.153641 -0.38)
+		(end 0.153641 -0.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8549a636-ee96-4592-8008-8a09a3d5cbd9")
+	)
+	(fp_line
+		(start -0.153641 0.38)
+		(end 0.153641 0.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "fac356a9-23e6-4a1b-8b2d-cd07d41ebaaa")
+	)
+	(fp_rect
+		(start -0.88 -0.42)
+		(end 0.88 0.42)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e1f44a16-e56d-4e8f-ae2e-c0d6dab1800a")
+	)
+	(fp_rect
+		(start -0.525 -0.27)
+		(end 0.525 0.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d9fccec2-8b34-4646-bce7-bffae7398d52")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "cea49f16-8863-49a6-b5bd-c7912d823129")
+		(effects
+			(font
+				(size 0.26 0.26)
+				(thickness 0.04)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "bfd4de39-151e-44cd-bece-ee0f24119d8b")
+	)
+	(pad "2" smd roundrect
+		(at 0.51 0)
+		(size 0.54 0.64)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "706c691a-6761-4f82-86e9-9fb46cd56758")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/R_0402_1005Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
