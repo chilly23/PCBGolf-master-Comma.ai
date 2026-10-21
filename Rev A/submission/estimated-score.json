@@ -1,0 +1,14 @@
+{
+  "bbox_mm": [
+    37.39134446027543,
+    65.35059651315129,
+    10.203317296177282
+  ],
+  "bbox_volume_mm3": 24932.28195006919,
+  "vias": 318,
+  "layers": 4,
+  "via_points": 15900,
+  "layer_points": 20000,
+  "estimated_score": 60832.28195006919,
+  "method": "Conservative STEP axis-aligned bounds"
+}
