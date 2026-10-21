@@ -1,0 +1,14 @@
+{
+  "source": "Submission - Velan.epro2",
+  "pcb_imported": true,
+  "components": 243,
+  "pads_checked": 1028,
+  "pad_nets_match": true,
+  "pad_assignments_repaired_after_import": 862,
+  "vias": 318,
+  "track_segments_and_arcs": 4095,
+  "copper_layers": 4,
+  "schematic_native_conversion": "Requires KiCad GUI project import",
+  "manufacturing_DRC": "Not verified",
+  "STEP": "User-provided model.step copied unchanged; assembly match not verified"
+}
