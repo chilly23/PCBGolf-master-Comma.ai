@@ -1,0 +1,166 @@
+(footprint "L4"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "L4"
+		(at -1.462 -1.2255 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ccc8b6f4-b48a-4980-8ee8-5328920e526b")
+		(effects
+			(font
+				(size 0.55 0.55)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "2u2"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "24adb0a6-6ef4-4c8d-b8d5-ed9da5bf372d")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8918a945-4706-4ed4-8432-47ec7a96cbff")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "863a24dd-6da9-43f1-ae87-52a9bd2a2a2c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "LQM2MPN2R2NG0L"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d1156172-987d-425b-97b4-9237c68ae7aa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "mcu")
+	(sheetfile "mcu.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.5 -1.054)
+		(end -1.5 1.054)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "24cafc41-cc0d-4f9e-9b64-2aeb5a701278")
+	)
+	(fp_line
+		(start -1.5 1.054)
+		(end 1.5 1.054)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "f46bdc53-d51f-413a-82a5-016ae414aa2d")
+	)
+	(fp_line
+		(start 1.5 -1.054)
+		(end -1.5 -1.054)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "df7dc104-5a56-4445-8ca1-08ef8677819e")
+	)
+	(fp_line
+		(start 1.5 1.054)
+		(end 1.5 -1.054)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0791a580-e774-4a90-88a9-c228bce57c69")
+	)
+	(fp_poly
+		(pts
+			(xy -0.508 -0.635) (xy -1.016 -0.635) (xy -1.016 0.635) (xy -0.508 0.635)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "ec8864bc-1090-40a1-8610-50139092c969")
+	)
+	(fp_poly
+		(pts
+			(xy 0.508 0.635) (xy 1.016 0.635) (xy 1.016 -0.635) (xy 0.508 -0.635)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill yes)
+		(layer "F.Fab")
+		(uuid "29a42369-861a-4b15-a454-238400f60016")
+	)
+	(pad "1" smd rect
+		(at -0.9 0)
+		(size 0.55 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "39aa60a2-1f1c-4542-910f-2871d13b2695")
+	)
+	(pad "2" smd rect
+		(at 0.9 0)
+		(size 0.55 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "867e10ff-5697-4141-be81-dccca0c4cf99")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/L_Cenker_CKCS201610.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
