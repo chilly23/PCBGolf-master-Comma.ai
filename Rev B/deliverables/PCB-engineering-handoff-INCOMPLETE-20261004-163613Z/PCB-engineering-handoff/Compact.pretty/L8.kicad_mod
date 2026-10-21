@@ -1,0 +1,160 @@
+(footprint "L8"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "L8"
+		(at -1.3 -1.39 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "471757b8-458a-431f-9039-dea56f9da205")
+		(effects
+			(font
+				(size 0.55 0.55)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(property "Value" "ACT1210D_CHOKE"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6441f5db-0a93-4119-b284-2718eb0ae460")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4a382e73-fea1-487a-949d-3bffc93e6bd0")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1802a689-d99c-4566-8e51-d19c2d1cae7e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "MPN" "ACT1210D-101-2P-TL00"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b95cfc34-cc92-429a-9881-de4c56e6faf6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "can")
+	(sheetfile "can.kicad_sch")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.65 -1.3)
+		(end 1.65 -1.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "66455695-78f6-44cb-aa43-7c287527545b")
+	)
+	(fp_line
+		(start -1.65 1.3)
+		(end -1.65 -1.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "83444dbb-0b31-4d66-9bab-52cb5dc239c5")
+	)
+	(fp_line
+		(start 1.65 -1.3)
+		(end 1.65 1.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9f592986-fe2f-405d-a2df-9b0c401de220")
+	)
+	(fp_line
+		(start 1.65 1.3)
+		(end -1.65 1.3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5f1c3055-847d-4a38-928f-cebd5cac2f31")
+	)
+	(pad "1" smd rect
+		(at -1.5 -0.725)
+		(size 1.05 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "f1bec3c9-f381-4d8c-a5ea-78d9b5914865")
+	)
+	(pad "2" smd rect
+		(at -1.5 0.725)
+		(size 1.05 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "4c15e9a9-7727-4329-9eb7-f1d66c6eb2cf")
+	)
+	(pad "3" smd rect
+		(at 1.5 0.725)
+		(size 1.05 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "43b5c866-778f-4566-b571-8fd083ad68de")
+	)
+	(pad "4" smd rect
+		(at 1.5 -0.725)
+		(size 1.05 1.05)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.0508)
+		(solder_paste_margin 0)
+		(thermal_bridge_angle 0)
+		(uuid "8c62f9bf-0c76-4b4d-ac77-5f544cceb8fa")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/ACT1210D-101-2P-TL00.step"
+		(offset
+			(xyz 11.4 -7.4 1.2)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
