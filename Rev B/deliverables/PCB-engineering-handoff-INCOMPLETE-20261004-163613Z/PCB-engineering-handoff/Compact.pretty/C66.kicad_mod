@@ -1,0 +1,179 @@
+(footprint "C66"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Capacitor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf)")
+	(tags "capacitor")
+	(property "Reference" "C66"
+		(at 0 -1.05 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "a62df1f4-c195-4661-8529-ab5321f42e69")
+		(effects
+			(font
+				(size 0.45 0.45)
+				(thickness 0.09)
+			)
+		)
+	)
+	(property "Value" "100nF"
+		(at 0 1.05 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dd622dab-0979-4ce8-898e-f6deb73d19d3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2b914b36-42ef-48fb-aa41-100de00d577c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e87345d2-e1d5-46d3-9d98-9f64fd3f9437")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "bac19d66-0f9c-4eb9-be30-314ab4dc2185")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MPN" "GRM033Z71C104KE14D"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4cdac366-6152-49c6-8ed8-ec99be07fa1d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Purpose" "VBAT bypass"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "d129be92-b3b8-4f27-8858-377452758df5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Source" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033Z71C104KE14-01.pdf"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "f36f5beb-706e-4e32-ad85-03a4ae5f480c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(sheetname "mcu")
+	(sheetfile "mcu.kicad_sch")
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -0.7 -0.35)
+		(end 0.7 0.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "246476f6-76dc-415f-a7dd-a10c1ce1fb5f")
+	)
+	(fp_rect
+		(start -0.3 -0.15)
+		(end 0.3 0.15)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "70214123-d9f8-4104-9328-d520169b2ac2")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -0.68 180)
+		(layer "F.Fab")
+		(uuid "0cee1aac-2cef-4974-bcff-ec52521e10f8")
+		(effects
+			(font
+				(size 0.25 0.25)
+				(thickness 0.04)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.345 0)
+		(size 0.318 0.36)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e28722d9-555e-46cd-ad66-a32b548b1265")
+	)
+	(pad "" smd roundrect
+		(at 0.345 0)
+		(size 0.318 0.36)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "34f2ecef-2278-443e-b22e-19e520e04e01")
+	)
+	(pad "1" smd roundrect
+		(at -0.32 0)
+		(size 0.46 0.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "8c673bc6-ce30-4409-aa7f-5160eda70b4d")
+	)
+	(pad "2" smd roundrect
+		(at 0.32 0)
+		(size 0.46 0.4)
+		(layers "F.Cu" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "5cbd2042-bf70-411d-98d3-5fc203905bf6")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/models/C_0201_0603Metric.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
