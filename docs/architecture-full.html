@@ -1,58 +1,76 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PCBGolf reference architecture</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#f5f5f5;color:#2d3142;font-family:Geist,Arial,sans-serif}main{max-width:1120px;margin:auto}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:960px}h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400}p{line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow-x:visible}}</style></head><body><main><h1>PCBGolf reference architecture</h1><p>Reference functions are retained across studies; routing status differs. See the repository README for configuration, source paths, and current limits.</p><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="architecture-full-title architecture-full-desc">
-<title id="architecture-full-title">PCBGolf reference architecture</title>
-<desc id="architecture-full-desc">Reference functions are retained across studies; routing status differs.</desc>
-<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4f5d75"/></marker></defs>
-<rect x="0" y="0" width="960" height="600" fill="#f5f5f5"/>
-<text x="40" y="48" font-family="Instrument Serif, Georgia, serif" font-size="28" fill="#2d3142">PCBGolf reference architecture</text>
-<text x="40" y="76" font-family="Geist, Arial, sans-serif" font-size="11" fill="#5a6580">Reference functions are retained across studies; routing status differs.</text>
-<path d="M 264,168 H 352" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 464,208 V 312" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 688,168 H 632 Q 624,168 624,176 V 336 Q 624,344 616,344 H 576" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 352,352 H 264" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 152,392 V 456" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 576,368 H 688" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<path d="M 536,392 V 480 Q 536,488 544,488 H 688" fill="none" stroke="#4f5d75" stroke-width="1.6" marker-end="url(#arrow)"/>
-<g data-node="12 V input"><rect x="40" y="128" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="56" y="146" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INPUT</text>
-<text x="56" y="168" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">12 V input</text>
-<text x="56" y="186" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Protection / distribution</text>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Four ports. One control core.</title><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&amp;family=Geist:wght@400;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><style>*{box-sizing:border-box}body{margin:0;padding:24px;background:#f5f5f5;color:#2d3142;font-family:Geist,Arial,sans-serif}main{max-width:1280px;margin:auto;min-width:0}.diagram-container{width:100%;overflow-x:auto}svg{display:block;width:100%;min-width:1280px}p{max-width:75ch;line-height:1.6}@media print{svg{min-width:0}.diagram-container{overflow:visible}}</style></head><body><main><div class="diagram-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="architecture-full-title architecture-full-desc">
+<title id="architecture-full-title">Four ports. One control core.</title>
+<desc id="architecture-full-desc">Reference board functions across the Rev0, RevA and RevB design studies.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4f5d75"/></marker><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="12" cy="12" r="0.7" fill="#bfc0c0" opacity="0.45"/></pattern></defs>
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#f5f5f5" stroke="#f5f5f5" />
+<rect x="24" y="180" width="1232" height="440" rx="0" fill="url(#dots)" stroke="none" />
+<text x="48" y="40" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">HARDWARE / PCB GOLF</text>
+<text x="48" y="100" font-family="Instrument Serif, Georgia, serif" font-size="40" font-weight="400" fill="#2d3142">Four ports. One control core.</text>
+<text x="48" y="140" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#4f5d75">Reference board functions across the Rev0, RevA and RevB design studies.</text>
+<path d="M 48 168 H 1232" fill="none" stroke="#bfc0c0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 328 284 H 384 Q 392 284 392 292 V 332 Q 392 340 400 340 H 448" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 448 444 H 400 Q 392 444 392 452 V 480 Q 392 488 384 488 H 328" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 888 292 H 840 Q 832 292 832 300 V 332 Q 832 340 824 340 H 768" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<path d="M 768 444 H 824 Q 832 444 832 452 V 488 Q 832 496 840 496 H 888" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#arrow)"/>
+<g data-node="12 V power input">
+<rect x="48" y="212" width="280" height="144" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="72" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">12 V power input</text>
+<text x="72" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Regulated 5 V + 3.3 V</text>
+<path d="M 196.0 290 L 176.0 318.0 H 192.0 L 180.0 338 L 208.0 310.0 H 192.0 Z" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 88 314.0 H 152.0 M 232.0 314.0 H 288" fill="none" stroke="#4f5d75" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="Power supplies"><rect x="352" y="128" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="368" y="146" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">POWER</text>
-<text x="368" y="168" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Power supplies</text>
-<text x="368" y="186" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">5 V and 3.3 V rails</text>
+<g data-node="Four OBD-C ports">
+<rect x="48" y="416" width="280" height="144" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="72" y="448" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">Four OBD-C ports</text>
+<text x="72" y="472" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">CAN / switched power</text>
+<rect x="84.0" y="496" width="36" height="44" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 96.0 514.0 H 108.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="138.0" y="496" width="36" height="44" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 150.0 514.0 H 162.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="192.0" y="496" width="36" height="44" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 204.0 514.0 H 216.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="246.0" y="496" width="36" height="44" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 258.0 514.0 H 270.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="USB-C and USB hub"><rect x="688" y="128" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="146" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INTERFACE</text>
-<text x="704" y="168" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">USB-C and USB hub</text>
-<text x="704" y="186" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Host connection</text>
+<g data-node="STM32H725">
+<rect x="448" y="280" width="320" height="224" rx="6" fill="#f2e7e2" stroke="#bf4520" stroke-width="1.5"/>
+<text x="472" y="312" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">STM32H725</text>
+<text x="472" y="336" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Control + monitoring</text>
+<rect x="564.0" y="378.0" width="88" height="88" rx="4" fill="#f5f5f5" stroke="#bf4520" />
+<path d="M 554.0 392.6666666666667 H 564.0 M 652.0 392.6666666666667 H 662.0 M 578.6666666666666 368.0 V 378.0 M 578.6666666666666 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 407.3333333333333 H 564.0 M 652.0 407.3333333333333 H 662.0 M 593.3333333333334 368.0 V 378.0 M 593.3333333333334 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 422.0 H 564.0 M 652.0 422.0 H 662.0 M 608.0 368.0 V 378.0 M 608.0 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 436.6666666666667 H 564.0 M 652.0 436.6666666666667 H 662.0 M 622.6666666666666 368.0 V 378.0 M 622.6666666666666 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<path d="M 554.0 451.3333333333333 H 564.0 M 652.0 451.3333333333333 H 662.0 M 637.3333333333334 368.0 V 378.0 M 637.3333333333334 466.0 V 476.0" fill="none" stroke="#bf4520" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="576.0" y="390.0" width="64" height="64" rx="2" fill="#f5f5f5" stroke="#bf4520" />
 </g>
-<g data-node="Four CAN channels"><rect x="40" y="312" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="56" y="330" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INTERFACE</text>
-<text x="56" y="352" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Four CAN channels</text>
-<text x="56" y="370" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Transceivers / ignition</text>
+<g data-node="USB-C + hub">
+<rect x="888" y="212" width="344" height="160" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="912" y="244" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">USB-C + hub</text>
+<text x="912" y="268" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">Host connectivity</text>
+<rect x="924.0" y="292" width="36" height="60" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 936.0 318.0 H 948.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="994.0" y="292" width="36" height="60" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1006.0 318.0 H 1018.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1064.0" y="292" width="36" height="60" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1076.0 318.0 H 1088.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1134.0" y="292" width="36" height="60" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1146.0 318.0 H 1158.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="STM32H725"><rect x="352" y="312" width="224" height="80" rx="6" fill="#f2e7e2" stroke="#bf4520" stroke-width="1.8"/>
-<text x="368" y="330" fill="#bf4520" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">CORE</text>
-<text x="368" y="352" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">STM32H725</text>
-<text x="368" y="370" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Control / monitoring</text>
+<g data-node="Storage + controls">
+<rect x="888" y="432" width="344" height="128" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.5"/>
+<text x="912" y="464" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="600" fill="#2d3142">Storage + controls</text>
+<text x="912" y="488" font-family="Geist Mono, Consolas, monospace" font-size="12" font-weight="400" fill="#4f5d75">microSD / button / LEDs</text>
+<rect x="924.0" y="512" width="36" height="28" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 936.0 522.0 H 948.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="994.0" y="512" width="36" height="28" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1006.0 522.0 H 1018.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1064.0" y="512" width="36" height="28" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1076.0 522.0 H 1088.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+<rect x="1134.0" y="512" width="36" height="28" rx="3" fill="#f5f5f5" stroke="#4f5d75" />
+<path d="M 1146.0 522.0 H 1158.0" fill="none" stroke="#4f5d75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </g>
-<g data-node="microSD"><rect x="688" y="312" width="224" height="80" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="330" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">STORE</text>
-<text x="704" y="352" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">microSD</text>
-<text x="704" y="370" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Removable storage</text>
-</g>
-<g data-node="Four OBD-C ports"><rect x="40" y="456" width="224" height="64" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="56" y="470" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">INTERFACE</text>
-<text x="56" y="492" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Four OBD-C ports</text>
-<text x="56" y="510" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">Controlled and monitored power</text>
-</g>
-<g data-node="Button and indicators"><rect x="688" y="456" width="224" height="64" rx="6" fill="#f5f5f5" stroke="#4f5d75" stroke-width="1.1"/>
-<text x="704" y="470" fill="#4f5d75" font-family="Geist Mono, Consolas, monospace" font-size="8" letter-spacing="1">IO</text>
-<text x="704" y="492" fill="#2d3142" font-family="Geist, Arial, sans-serif" font-weight="600" font-size="12">Button and indicators</text>
-<text x="704" y="510" fill="#5a6580" font-family="Geist Mono, Consolas, monospace" font-size="9">User input / status</text>
-</g>
-<line x1="40" y1="548" x2="920" y2="548" stroke="#4f5d75" stroke-width="0.7"/>
-<text x="40" y="568" font-family="Geist, Arial, sans-serif" font-size="10" fill="#5a6580">Engineering studies only. Missing connections and manufacturing reviews prevent release.</text>
-<text x="40" y="588" font-family="Geist Mono, Consolas, monospace" font-size="8" fill="#5a6580">ARROWS: DATA OR DEPENDENCY DIRECTION   /   SOURCE: REPOSITORY FILES</text>
-</svg></div><p>Architecture view, doc-inline size, mixed technical audience. This overview omits individual pins, API fields, and library internals. The README supplies those details.</p></main></body></html>
+<text x="48" y="652" font-family="Geist, Arial, sans-serif" font-size="16" font-weight="400" fill="#2d3142">Port power control and CAN transceivers connect the controller to the OBD-C interfaces.</text>
+<path d="M 48 676 H 1232" fill="none" stroke="#bfc0c0" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" />
+<text x="48" y="700" font-family="Geist, Arial, sans-serif" font-size="12" font-weight="400" fill="#4f5d75">Reference architecture • routing and manufacturing readiness differ by revision</text>
+</svg></div><p>Read this figure from left to right. Solid arrows show the main connection or handoff. Dashed arrows show returned measurements or responses. Illustrations identify component roles; they are schematic, not hardware drawings or runtime captures.</p></main></body></html>
